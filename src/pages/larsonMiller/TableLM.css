@@ -1,0 +1,72 @@
+input {
+    font: caption;
+    padding: 0;
+    font-size: 6px;
+}
+.MuiInput-input {
+    padding: 0;
+    text-align: center;
+}
+
+.MuiInput-root {
+    margin: 0;
+    padding: 0;
+}
+
+.MuiInputBase-input {
+    font: caption;
+    padding: 0;
+    font-size: 6px;
+}
+
+.css-1atu56z-MuiPaper-root {
+    box-shadow: none;
+}
+.MuiPaper-rounded{ 
+    box-shadow: none;
+}
+
+
+
+.MuiInputBase-root {
+    padding: 0;
+    font-size: 6px;
+}
+
+.MuiTextField-root {
+    margin: 0;
+    padding: 0;
+    font-size: 6px;
+}
+
+.MuiTableCell-root {
+    margin: 0;
+    padding: 0;
+    font-size: 6px;
+}
+
+.input-straight__container {
+    display: inline-flex;
+    margin: 3px 0 3px 0;
+    width: 100%;
+    height: 1.2rem;
+    vertical-align: middle;
+    cursor: pointer;
+    /* border-radius: 50%;
+    border: 1px solid red;
+    padding: 5px 0; */
+    position: relative;
+    color: rgba(0, 0, 0, 0.6);
+}
+.input-straight {
+    cursor: pointer;
+    opacity: 1;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}

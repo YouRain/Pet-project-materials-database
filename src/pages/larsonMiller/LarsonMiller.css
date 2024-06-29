@@ -1,0 +1,306 @@
+/* Левая сторона страницы - Описание игры */
+.left-side {
+  padding: 70px 10px 0 10px;
+  /* width: 14%; */
+  min-width: 240px;
+  max-width: 240px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: #efeeee;
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Левая сторона страницы - Настройки импорта */
+.left-side__import {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.import__tittle {
+  margin-bottom: 10px;
+  padding: 0 16px 5px 16px;
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.2;
+}
+
+.separator__container {
+  width: 100%;
+  margin: 5px 0;
+  padding: 14px 2px 5px 2px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.separator__tittle {
+  position: absolute;
+  padding: 0 6px;
+  top: 0%;
+  left: 50%;
+  background-color: #efeeee;
+  color: #000;
+  font-size: 14px;
+  transform: translate(-50%, -50%);
+}
+
+.separator__wrapper {
+  margin-right: 8px;
+}
+.separator__wrapper.last {
+  margin-right: 0;
+}
+
+
+.separator-input {
+  display: none;
+  overflow: visible;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+.separator-btn {
+  display: flex;
+  height: 100%;
+  padding: 0px 8px;
+  width: 100%;
+  /* background-color: transparent; */
+  border-width: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #000;
+  font-size: 16px;
+  margin: 0;
+  user-select: none;
+  transition: background-color .15s ease-in-out;
+}
+
+.separator-input:checked+.separator-btn {
+  border: 1px solid grey;
+  background-color: #fff;
+}
+/* Температура */
+.temperature__container {
+  width: 100%;
+  margin: 5px 0;
+  padding: 14px 2px 5px 2px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.temperature__tittle {
+  position: absolute;
+  padding: 0 6px;
+  top: 0%;
+  left: 50%;
+  background-color: #efeeee;
+  color: #000;
+  font-size: 14px;
+  transform: translate(-50%, -50%);
+}
+
+.temperature__wrapper {
+  width: 60px;
+  margin-right: 8px;
+}
+
+.temperature-input {
+  display: none;
+  overflow: visible;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+.temperature-btn {
+  height: 100%;
+  padding: 0px 8px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: transparent; */
+  border-width: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #000;
+  font-size: 16px;
+  margin: 0;
+  user-select: none;
+  transition: background-color .15s ease-in-out;
+}
+
+.temperature-input:checked+.temperature-btn {
+  border: 1px solid grey;
+  background-color: #fff;
+}
+
+.file-source-btn {
+  width: 100%;
+  min-width: 100px;
+  margin: 10px auto;
+  background-color: black;
+  border-radius: 6px;
+  position: relative;
+  color: #fff;
+  transition: background-color .15s ease-in-out;
+  user-select: none;
+}
+
+.file-input {
+  display: none;
+  overflow: visible;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+.file-btn {
+  background-image: none;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.file-source-btn .file-btn {
+  background-color: transparent;
+  border-radius: 6px;
+  border-width: 0;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  margin: 0;
+  transition: background-color .15s ease-in-out;
+}
+
+/* .file-source-btn .file-btn>span {
+  text-align: center;
+  align-items: center;
+} */
+
+/* Левая сторона страницы - Параметр Ларсона-Миллера */
+.constantLM__tittle {
+  margin-bottom: 10px;
+  padding: 0 16px 5px 16px;
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.2;
+}
+
+.constantLM__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.constantLM__settings {
+  margin: 0 2px;
+  padding: 5px 0;
+  position: relative;
+}
+
+.constantLM {
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px;
+  font-size: 16px;
+  color: black;
+  border: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  /* text-align: center; */
+}
+
+/* Левая сторона страницы - Кнопка рассчёта */
+.calculate {
+  width: 100%;
+  /* display: block; */
+  margin: 10px 0;
+  padding: 5px 15px;
+  /* background-color: rgb(87, 235, 255); */
+  background-color: #90EE90;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Правая сторона страницы - Таблица и График */
+.right-side {
+  position: fixed;
+  top: 50px;
+  left: 240px;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+}
+
+/* Таблица */
+.table__container {
+  min-width: 670px;
+  width: 40%;
+  height: 100%;
+}
+/* График */
+.graph__container {
+  position: relative;
+  padding: 0;
+  width: 60%;
+}
+
+/* Корни уравнения - combobox */
+.roots__container {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  margin-top: 5px;
+  /* transform: translate(-50%, 0); */
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.roots-label {
+  /* margin-right: 10px; */
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+.roots-combobox {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  user-select: none;
+}
